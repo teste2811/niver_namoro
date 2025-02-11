@@ -1,0 +1,105 @@
+body,html{
+    margin: 0;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+nav{
+    background-color: rgb(255, 177, 177);
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-family: 'Lobster', cursive;
+    font-size: 15px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+}
+#logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#logo-text{
+    font-family: 'Lobster', cursive;
+    color: rgb(255, 241, 241);
+    font-size: 30px;
+}
+nav img{
+    height: 70px;
+    width: 70x;
+}
+#sections{
+    display: flex;
+    justify-content: space-between;
+    gap: 45px;
+    color: rgb(255, 241, 241);
+}
+.active{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 3px;
+}
+.section:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+    animation: animationp 0.3s ease forwards;
+}
+
+@keyframes animationp{
+    0% {transform: translateY(0px);}
+    100%{transform:translateY(-5px)}
+}
+
+.heart {
+    position: absolute;
+    bottom: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    transform: rotate(-45deg);
+    z-index: 1000;
+    animation: floatUp 5s linear infinite;
+}
+
+.heart::before,
+.heart::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -10px;
+    left: 0;
+}
+
+.heart::after {
+    top: 0;
+    left: 10px;
+}
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(-45deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) rotate(-45deg);
+        opacity: 0;
+    }
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 70vh;
+}

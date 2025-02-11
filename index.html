@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amor em pixels - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/musica.css">
+</head>
+<body>
+    <nav>
+        <div id="logo" onclick="window.location.href='index.html'" style="cursor: pointer;">
+            <img src="/img/logo.png" id="logo-img">
+            <p id="logo-text">Amor em pixels</p>
+        </div>
+        <div id="sections">
+            <p class="section active">Home</p>
+            <p class="section">Atividades</p>
+            <p class="section">Cinema</p>
+            <p class="section">Motivações</p>
+            <p class="section">Proibido</p>
+        </div>
+    </nav>
+    <div id="content">
+        <div class="card" onclick="alert('Lembre-se de ligar o volume!'),window.location.href='cinema.html'">
+            <div class="img-div">
+                <img src="/img/icons8-filme-50.png" alt="">
+            </div>
+            <h2>Cinema</h2>
+            <p>Um pequeno filmezinho para você,sobre nós</p>
+            <div class="btn-div">
+                <button>Acessar cinema</button>
+            </div>
+        </div>
+    </div>
+    <script src="/js/index2.js"></script>
+</body>
+</html>
