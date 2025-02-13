@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amor em pixels - Cinema</title>
+    <title>Amor em pixels - Atividades</title>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/cinema.css">
+    <link rel="stylesheet" href="css/motivacao.css">
 </head>
 <body>
     <nav>
@@ -16,16 +16,20 @@
         <div id="sections">
             <p class="section" onclick="window.location.href='index.html'">Home</p>
             <p class="section" onclick="window.location.href='atividades.html'">Atividades</p>
-            <p class="section active" onclick="window.location.href='cinema.html'">Cinema</p>
+            <p class="section" onclick="window.location.href='cinema.html'">Cinema</p>
             <p class="section" onclick="window.location.href='motivacao.html'">Motivações</p>
-            <p class="section" onclick="window.location.href='proibido.html'">Proibido</p>
+            <p class="section active" onclick="window.location.href='proibido.html'">Proibido</p>
         </div>
     </nav>
     <div id="content">
-        <div id="main-content">
-            <video src="video/km_niver _720p_30f_20250210_185027.mp4" width="600px" controls></video>
+        <div class="main-content">
+            <p>VOCÊ TEM CERTEZA QUE QUER ENTRAR AQUI?</p>
+            <div class="btns">
+                <button class="yes" onmouseenter="mudarPosicao()">sim</button>
+                <button onclick="window.location.href='index.html'" class="no">NÃO</button>
+            </div>
         </div>
     </div>
-    <script src="js/index.js"></script>
+    <script src="js/proibido.js"></script>
 </body>
 </html>

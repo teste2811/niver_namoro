@@ -10,29 +10,20 @@
 <body>
     <nav>
         <div id="logo" onclick="window.location.href='index.html'" style="cursor: pointer;">
-            <img src="/img/logo.png" id="logo-img">
+            <img src="img/logo.png" id="logo-img">
             <p id="logo-text">Amor em pixels</p>
         </div>
         <div id="sections">
             <p class="section" onclick="window.location.href='index.html'">Home</p>
             <p class="section active" onclick="window.location.href='atividades.html'">Atividades</p>
-            <p class="section">Cinema</p>
-            <p class="section">Motivações</p>
-            <p class="section">Proibido</p>
+            <p class="section" onclick="window.location.href='cinema.html'">Cinema</p>
+            <p class="section" onclick="window.location.href='motivacao.html'">Motivações</p>
+            <p class="section" onclick="window.location.href='proibido.html'">Proibido</p>
         </div>
     </nav>
     <div id="content">
-        <div class="card">
-            <div class="img-div">
-                <img src="/img/icons8-música-50.png" alt="">
-            </div>
-            <h2>Música</h2>
-            <p>Uma música aleatória para você</p>
-            <div class="btn-div">
-                <button>Acessar música</button>
-            </div>
-        </div>
+        <iframe id="iframe" style="border-radius:12px" src="" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
-    <script src="/js/index.js"></script>
+    <script src="js/musica.js"></script>
 </body>
 </html>
